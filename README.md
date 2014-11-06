@@ -11,3 +11,4 @@ Content Checklist:
 - [ ] Book Trailer on You Tube: I believe I heard a “yes” to wanting a video
 - [ ] Facebook page for the book
 - [ ] Amazon page for the book: you mentioned looking into what we can do for pre-sales on Amazon, so this could be the pre-sale page?
+- [ ] Jewel: when images are finalized, track down license info and post credits if required
