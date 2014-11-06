@@ -8,9 +8,9 @@
 <meta name="viewport" content="width=device-width">
 <title>Great Decisions - Perfect Timing</title>
 <link rel="shortcut icon" href="favicon.ico" >
-<!-- <link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/foundation.min.css">
- --><link rel="stylesheet" href="stylesheets/app.css">
+
+<link rel="stylesheet" href="stylesheets/normalize-foundation.css">
+<link rel="stylesheet" href="stylesheets/app.css">
 
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
@@ -68,9 +68,26 @@
   </div>
 </div>
 
+<!-- //------------------------------------------------
+
+HOME TAB: INITIAL QUOTES and book.
+
+//------------------------------------------------ -->
+
 <div id="home">
   <div class="row">
 
+    <!-- MOBILE VIEW: phones and smaller tablets -->
+    <div class="intro_sm show-for-small">
+      <div class="columns large-centered">
+        <h1>creativity<br><span>intuition</span><br>& perfect timing</h1>
+        <h4>What happens when creativity, intuition and perfect timing come together in support of doing something that fascinates you? What do you get after you have developed and learned to trust your ability to make the right moves at the right time? The answer: A creative life filled with joy, abundance and personal fulfillment.</h4>
+        <div class="divider"></div>
+        <a class="scroll_btn"></a>
+      </div>      
+    </div>
+
+    <!-- FULL SIZE VIEW: larger tablets, laptops and desktops -->
     <div class="intro_large hide-for-small">
       <h1>creativity, <span>intuition</span> & perfect timing</h1>
       <div class="tri">
@@ -86,15 +103,6 @@
       <a class="scroll_btn"></a>  
     </div>
 
-    <div class="intro_sm show-for-small">
-      <div class="columns large-centered">
-        <h1>creativity<br><span>intuition</span><br>& perfect timing</h1>
-        <h4>What happens when creativity, intuition and perfect timing come together in support of doing something that fascinates you? What do you get after you have developed and learned to trust your ability to make the right moves at the right time? The answer: A creative life filled with joy, abundance and personal fulfillment.</h4>
-        <div class="divider"></div>
-        <a class="scroll_btn"></a>
-      </div>      
-    </div>
-
   </div>
   <div id="slides">
     <div class="slides-container">
@@ -102,50 +110,11 @@
   </div>
 </div>
 
-<!-- 
-<div id="home">
-  <div class="row">
+<!-- //------------------------------------------------
 
-    <div class="intro_large show-for-large-up show-for-medium">
-      <div class="large-3 columns"></div>
-      <div class="large-9 columns">
-        <h1>Great Decisions Perfect Timing</h1>
-        <div class="tri">
-          lorem ipsum
-        </div>
-        <div class="text_intro">
-          <div id="quotes">
-            <div class="textItem">Paulo is amazing.</div>
-            <div class="textItem">The Divination Foundation rocks.</div>
-            <div class="textItem">Another brilliant quote.</div>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <a class="scroll_btn"></a>  
-      </div>
-    </div>
+FOR READERS TAB: REVIEWS 
 
-    <div class="intro_sm show-for-small">
-      <div class="columns large-centered">
-          <h1>Great Decisions Perfect Timing</h1>
-          <div class="tri">
-            lorem ipsum
-          </div>
-          <div class="divider"></div>
-          <a class="scroll_btn"></a>  
-      </div>      
-    </div>
-
-  </div>
-  <div id="slides">
-    <div class="slides-container">
-      <p>copy</p>
-      <img src="images/headers/home_slide01.jpg" alt="slide01" />
-      <img src="images/headers/home_slide02.jpg" alt="slide02" />
-    </div>
-  </div>
-</div>
- --><!-- end home -->
+//------------------------------------------------ -->
 
 <div class="section" id="readers">
   <div id="h-reviews">
@@ -165,14 +134,26 @@
       <p>"Paul has graced us with a wonderful blend of optimistic perspectives and practices so we can contact our own inner wisdom. This book shows, simply and meaningfully, how synchronicity offers us a path to becoming psychologically healthy and spiritually awake."</p>
       <p>—<b>DAVID RICHO</b>, author of <em>The Power Of Grace: Recognizing Unexpected Gifts on the Path</em></p>
 
-      <h2>Signings and Events</h2> 
+      <!-- //------------------------------------------------
 
-      <p>Tour dates here...</p>
+      SIGNINGS AND EVENTS: un-comment this block to add
+
+            <h2>Signings and Events</h2> 
+
+            <p>Tour dates here...</p>
+
+      //------------------------------------------------ -->
 
     </div>
   </div>
 </div>
 
+
+<!-- //------------------------------------------------
+
+VDM + EXCERPTS TAB
+
+//------------------------------------------------ -->
 
 <div class="section" id="vdm">
   <div id="h-vdm" data-top-bottom="background-position:100% 10%;"  data-bottom-top="background-position:0% 0%;">
@@ -212,6 +193,16 @@
   </div>
 </div>
 
+<!-- //------------------------------------------------
+
+PRE-ORDER TAB
+
+Not yet ready for prime-time. Needs link to Amazon pre-order page if that's the route we're headed.
+Or to an email list, if we want to simply take email addresses and email folks once we have a pre-order
+or order page. If the latter, will need access to MailChimp.
+
+//------------------------------------------------ -->
+
 
 <div class="section" id="buy">
   <div id="h-buy" data-top-bottom="background-position:0% 0%;"  data-bottom-top="background-position:70% 70%;">
@@ -223,33 +214,20 @@
       <div class="row">
         <div class="large-8 small-12 large-centered small-centered columns">
 
-          <p>We can ask for email address and add them to a pre-order mailing list --
-            and/or take credit cards for pre-orders.</p>
-
-
-<!-- Row Layout for forms -->
-<form>
-  
-
-<!-- Postfix action -->
-<div class="row collapse">
-  <div class="ten mobile-three columns">
-    <input type="text" placeholder="Email Address" />
-  </div>
-  <div class="two mobile-one columns">
-    <a class="button expand postfix">Pre-Order</a>
-  </div>
-</div>
-
-</form>
-
-
+          <p>We'll let you know as soon as the book is available for purchase.</p>
 
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<!-- //------------------------------------------------
+
+PRESS TAB: not yet ready for prime-time. Most content is placeholder and needs to either be edited or removed with real links, etc.
+
+//------------------------------------------------ -->
 
 
 <div class="section" id="press">
@@ -304,19 +282,6 @@
             <li>...</li>
           </ul>
 
-
-<!--         <form>
-          <input type="text" name="company" placeholder="Name of Publication, TV Show, Radio Show, Podcast or Blog" /> 
-          <br />
-          <input type="text" name="name" placeholder="Your Full Name" /> 
-          <br />
-          <textarea name="address">Mailing address or Email address for where the book should be sent to and to whom</textarea> 
-          <br />
-          <input type="text" name="date" placeholder="Date by which you need the book or materials" /> 
-          <br />
-          <input type="text" name="phone" placeholder="Phone number we can call with any questions" /> 
-        </form>
- -->
       <h2>Media Kits</h2>
 
         <img src="http://placehold.it/350x150">
@@ -331,6 +296,12 @@
   </div>
 </div>
 
+<!-- //------------------------------------------------
+
+AUTHOR TAB: image is handled via CSS
+
+//------------------------------------------------ -->
+
 <div class="section" id="author">
   <div id="h-author">
 
@@ -341,7 +312,7 @@
         </div>
         <div class="large-8 medium-9 small-9 columns">
             <h1>Paul O'Brien</h1>
-            <p>Paul O'Brien invented divination software and founded what became the world’s largest astrology and divination website. He is a sought-after visionary speaker and entrepreneur. Paul is the author of The Visionary I Ching: A Book of Changes for the 21st Century, Divination: Sacred Tools for Reading the Mind of God and the Visionary I Ching Oracle Cards app. He serves as Executive Director of the Divination Foundation (Divination.com). For 30 years he has hosted the Pathways radio show, an interview program focused on personal and cultural transformation (podcasts at Divination.com).</p>
+            <p>Paul O’Brien founded what became the world’s largest astrology and divination website and is known as the father of interactive divination. He is a sought-after visionary, entrepreneur and speaker. He is the author of <em class="book">The Visionary I Ching: A Book of Changes for the 21st Century</em> (ebook and app) and the book <em class="book">Divination: Sacred Tools for Reading the Mind of God</em> and he serves as Executive Director of the Divination Foundation (Divination.com). For 30 years he has hosted the Pathways radio show, an interview program focused on personal and cultural transformation.</p>
         </div>
       </div>
     </div>
