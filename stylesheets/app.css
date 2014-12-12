@@ -1,3 +1,17 @@
+/* might be able to pull this - was trying to ditch intro_large and intro_sm */
+#home .intro { display:inline-block; vertical-align:middle; }
+#home .intro h4 {
+	font: 51px/54px 'century_gothicregular';
+	color:#fff;
+	text-shadow:rgba(0,0,0,0.7) 1px 1px 0px;
+}
+#home .intro h1 {
+	font: 51px/54px 'century_gothicregular';
+	color:#fff;
+	text-shadow:rgba(0,0,0,0.7) 1px 1px 0px;
+}
+
+
 .intro_text_home01{-webkit-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;-moz-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;-ms-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;-o-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;animation:intro_text_home 0.7s ease-in-out 1.4s backwards}
 .intro_tri_home{-webkit-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;-moz-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;-ms-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;-o-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;animation:intro_text_home 0.7s ease-in-out 1.5s backwards}
 .intro_text_home02{-webkit-animation:intro_text_home 0.7s ease-in-out 1.6s backwards;-moz-animation:intro_text_home 0.7s ease-in-out 1.6s backwards;-ms-animation:intro_text_home 0.7s ease-in-out 1.6s backwards;-o-animation:intro_text_home 0.7s ease-in-out 1.6s backwards;animation:intro_text_home 0.7s ease-in-out 1.6s backwards}
@@ -41,43 +55,27 @@
 .textItem{position:absolute;display:none;width:100%}
 
 #home .intro_large{float:left;left:60%;margin-top:0px;margin-left:-165px;z-index:9;width:440px;height:548px;position:absolute}
-#home .intro_large h1{position:absolute;width:400px;height:314px;margin-top:140px;font:51px/60px 'century_gothicregular';color:#fff;text-shadow:rgba(0,0,0,0.7) 1px 1px 0px}
+#home .intro_large h1{position:absolute;width:400px;height:314px;margin-top:140px;margin-bottom:80px;font:51px/54px 'century_gothicregular';color:#fff;text-shadow:rgba(0,0,0,0.7) 1px 1px 0px}
 #home .intro_large h1 span{color:rgba(208, 215, 94, 1)}
 #home .intro_large svg{position:absolute;width:300px;height:300px;top:90px;margin-left:-150px}
-#home .intro_large .text_intro{font:14px/20px 'Open Sans', sans-serif;color:#fff;margin-top:360px;text-shadow:rgba(0,0,0,0.7) 1px 1px 1px}#home .intro_large .divider{height:2px;margin:550px auto 15px auto;width:20%;background:#fff}#home .intro_large .scroll_btn{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0);width:45px;height:45px;display:block;margin:0 auto;border:2px solid #fff;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out;margin-bottom:90px}#home .intro_large .scroll_btn:hover{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0.5)}
+#home .intro_large .text_intro{font:14px/20px 'Open Sans', sans-serif;color:#fff;margin-top:360px;text-shadow:rgba(0,0,0,0.7) 1px 1px 1px}
 
 @media (min-height: 780px){
 	#home .intro_large{width:396px;height:614px;margin-top:-307px;margin-left:-198px;left:60%;top:50%;position:absolute;z-index:9;float:left}
 	#home .intro_large h1{font:61px/82px 'century_gothicregular';width:100%;color:#fff;margin-top:35px;text-shadow:rgba(0,0,0,0.7) 1px 1px 1px}
 	#home .intro_large h1 span{color:#d7b55e}
-	#home .intro_large .text_intro{color:#fff;margin-top:360px;text-shadow:rgba(0,0,0,0.7) 1px 1px 1px}
+	#home .intro_large .text_intro{color:#fff;margin-top:400px;text-shadow:rgba(0,0,0,0.7) 1px 1px 1px}
 	#home .intro_large .text_intro #quotes{font-size:27px;line-height:42px}
-	#home .intro_large .divider{height:2px;margin:552px auto 15px auto;width:20%;background:#fff}
-	#home .intro_large .scroll_btn{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0);width:45px;height:45px;display:block;margin:0 auto;border:2px solid #fff;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out;margin-bottom:90px}
-	#home .intro_large .scroll_btn:hover{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0.5)}
 	#home .intro_large svg{position:absolute;width:396px;height:342px;top:0;left:0;margin-left:0px}
 	#home .intro_large svg path{fill:#fff}
 }
-#home .intro_med{position:absolute;margin-left:-347px;margin-top:-143px;left:50%;top:50%;z-index:9}
-#home .intro_med h1{font:51px/60px 'century_gothicregular';color:#fff;margin-top:55px;position:absolute;width:300px;height:300px;top:0px;left:0px;text-shadow:rgba(0,0,0,0.7) 1px 1px 1px}
-#home .intro_med h1 span{color:#d7b55e}
-#home .intro_med h4{font:14px/20px 'Open Sans', sans-serif;color:#fff;margin-top:25px;text-align:left;text-shadow:rgba(0,0,0,0.7) 1px 1px 1px}
-#home .intro_med .divider{height:2px;margin:15px 0;width:20%;background:#fff}
-#home .intro_med .scroll_btn{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0);width:45px;height:45px;display:block;border:2px solid #fff;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out;margin-bottom:90px}
-#home .intro_med .scroll_btn:hover{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0.5)}
-#home .intro_med svg{width:300px;height:300px;top:0px;left:0px;position:absolute}
 #home .intro_sm{position:absolute;z-index:9;width:100%;float:left;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
 #home .intro_sm h1{font:51px/60px 'century_gothicregular';color:#fff;margin-top:90px;text-shadow:rgba(0,0,0,0.5) 1px 1px 1px}
 #home .intro_sm h1 span{color:#fff}
 #home .intro_sm h4{font:14px/20px 'Open Sans', sans-serif;color:#fff;text-shadow:rgba(0,0,0,0.5) 1px 1px 1px}
-#home .intro_sm .divider{height:2px;margin:15px auto;width:20%;background:#fff}
-#home .intro_sm .scroll_btn{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0);width:45px;height:45px;display:block;margin:0 auto;border:2px solid #fff;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out;margin-bottom:90px}
-#home .intro_sm .scroll_btn:hover{background:url(../images/nav/scroll.gif) no-repeat 50% 50% rgba(215,181,94,0.5)}
 @media (max-height: 340px){
 	#home .intro_sm h1{font:30px/35px 'century_gothicregular';margin-top:70px}
 	#home .intro_sm h4{font:12px/15px 'Open Sans', sans-serif;margin-top:15px}
-	#home .intro_sm .divider{display:none}
-	#home .intro_sm .scroll_btn{display:none}
 }
 @media (max-width: 340px){
 	#home .intro_sm h1{font:30px/35px 'century_gothicregular'}
@@ -113,9 +111,8 @@
 }
 #h-reviews{background-image:url(../images/headers/bg_press.jpg);background-position:50% 20%; height:500px;}
 #h-press{background-image:url(../images/headers/bg_woman_city.jpg);background-position:50% 50%; height:400px;}
-/*#h-buy{background-image:url(../images/headers/bg_books.jpg);background-position:50% 50%; height: 260px; padding-top: 60px; padding-left: 10em;}
-*/
 #h-buy{
+	padding-top: 30px;
 	min-height: 90%;
 }
 #h-vdm{background-image:url(../images/headers/bg_reviews.jpg); 
