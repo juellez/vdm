@@ -98,19 +98,8 @@
 		position:relative;
 		background-repeat:no-repeat;
 		margin-bottom:10px;top:-60px}
-
-#h-author{ 
-		height: 400px;
-		background-color:#e1e1e1;
-		width:100% !important;
-		overflow:hidden;display:block;
-		position:relative;
-		margin-bottom:10px;
-		top:-20px;
-		background-color: #333333;
-}
 #h-reviews{background-image:url(../images/headers/bg_press.jpg);background-position:50% 20%; height:500px;}
-#h-press{background-image:url(../images/headers/bg_woman_city.jpg);background-position:50% 50%; height:400px;}
+#h-press{background-image:url(../images/headers/bg_woman_reading.jpg);background-position:50% 50%; height:400px;}
 #h-buy{
 	padding-top: 30px;
 	min-height: 90%;
@@ -138,6 +127,31 @@
 	#h-reviews,#h-press,#h-vdm{height:260px !important}
 	#h-reviews h1,#h-press h1,#h-vdm h1{margin:2.3em 0 -0.1em 0}
 	#h-author h1{margin:.7em 0 -0.1em}
+}
+
+#author{ 
+	margin-top: 50px;
+}
+#press{ 
+	margin-top: 70px;
+}
+/* Glyph, by Harry Roberts */
+hr.author {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.author:after {
+    content: "about the author";
+    font-family: Lora, serif;
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
 .exp_block a.exp_tt{position:relative}
