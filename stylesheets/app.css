@@ -100,7 +100,7 @@
 		margin-bottom:10px;top:-60px}
 #h-reviews{background-image:url(../images/headers/bg_press.jpg);background-position:50% 20%; height:500px;}
 #h-press{background-image:url(../images/headers/bg_woman_reading.jpg);background-position:50% 50%; height:400px;}
-#h-buy{
+#h-buy, #h-buy-mobile{
 	padding-top: 30px;
 	min-height: 90%;
 }
@@ -109,7 +109,7 @@
 
 #h-reviews h1,#h-reviews h2,#h-press h1,#h-press h2,#h-vdm h1,#h-vdm h2,#h-author h1,#h-author h2{color:#fff;font-family:'century_gothicregular';font-weight:normal;text-shadow:rgba(0,0,0,0.5) 1px 1px 1px}
 #h-buy h1 { margin: .5em 0 .5em 0; color: #333; font-family:'century_gothicregular';font-weight:normal;}
-#h-buy .button { margin: 2em 0 3em 0; }
+#h-buy .button, #h-buy-mobile .button { margin: 2em 0 3em 0; }
 #h-buy h2, #h-buy h2 a { color:#999; font-weight: lighter; font-family:'century_gothicregular';}
 #h-vdm h1,#h-vdm h2{ text-shadow: 3px 3px 5px rgba(0, 0, 0, .9) }
 #h-reviews h1,#h-vdm h1{margin:2em 0 -0.1em 0}
@@ -196,7 +196,7 @@ ul.sm_icon li a{width:30px;height:30px;display:block;border:2px solid #999;-webk
 
 @media only screen and (max-width: 473px) {
 	#logo { font-size: 18px!important; }
-	#h-buy h1{
+	#h-buy-mobile h1{
 		margin-top: 200px;
 	}
 	.mobile-only #h-buy h1{
