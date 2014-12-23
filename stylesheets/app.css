@@ -199,6 +199,9 @@ ul.sm_icon li a{width:30px;height:30px;display:block;border:2px solid #999;-webk
 	#h-buy h1{
 		margin-top: 200px;
 	}
+	.mobile-only #h-buy h1{
+		margin-top: 0;
+	}
 }
 #h-reviews h1, #h-reviews h2, #h-method h1, #h-method h2, #h-vdm h1, #h-vdm h2, #h-author h1, #h-author h2 {
  font-family: Lora, serif; 
@@ -223,7 +226,12 @@ ul.sm_icon li a{width:30px;height:30px;display:block;border:2px solid #999;-webk
   #sthoverbuttons #sthoverbuttonsMain {
     width: 45px;
 }
-
+.mobile-only{
+	display: none;
+}
+#press ul{
+		margin-left: 1.25em;
+}
 @media only screen 
 and (max-width : 900px) {
 	#nav li a{padding:0 15px;}
@@ -238,6 +246,24 @@ and (max-width : 800px) {
 		float: none;
 	}
 }
+@media only screen 
+and (max-width : 768px) {
+	#home{display: none;}
+/*	#home{background: #b7beb7;}*/
+/*	#home-mobile-img{width: 50%;}*/
+	.mobile-only{display: block;}
+	.mob-author{width: 100%;}
+	#mob-author-content{
+		 float: none; text-align: center;
+		 margin: 0 auto;
+	}
+	#press .pb90, #vdm .pb90{
+		padding-bottom: 0;
+	}
+	.mob-author{
+		padding-bottom: 20px;
+	}
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -248,10 +274,10 @@ and (max-device-width : 480px) {
 		margin: 0 auto;
 	}
 	#h-reviews h1{
-		margin-top: .7em;
+		margin-top: 40px;
 	}
 	#h-vdm h1, #h-press h1{
-		margin-top: 0;
+		margin-top: 70px;
 	}
 	#h-vdm h1, #h-press h1, #h-reviews h1{
 		font-size: 2.125em;
