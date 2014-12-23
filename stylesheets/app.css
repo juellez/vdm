@@ -223,6 +223,9 @@ ul.sm_icon li a{width:30px;height:30px;display:block;border:2px solid #999;-webk
   #sthoverbuttons #sthoverbuttonsMain {
     width: 45px;
 }
+.mobile-only{
+	display: none;
+}
 
 @media only screen 
 and (max-width : 900px) {
@@ -237,6 +240,13 @@ and (max-width : 800px) {
 	#logo{
 		float: none;
 	}
+}
+@media only screen 
+and (max-width : 768px) {
+	#home{background: #b7beb7;}
+/*	#home-mobile-img{width: 50%;}*/
+	.mobile-only{display: block;}
+	.mob-author{width: 100%;}
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
