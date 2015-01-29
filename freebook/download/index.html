@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Great Decisions, Perfect Timing</title>
+<link rel="stylesheet" href="../../stylesheets/normalize-foundation.css">
+<link rel="stylesheet" href="../../stylesheets/app.css">
+<style>
+body { overflow: visible; }
+#page { margin-top: 80px; }
+img.book { max-width: 65%; }
+
+@media only screen 
+and (max-width : 900px) {
+  #menu { display: none; visibility: hidden; }
+  #page { margin-top: 20px; }
+  img.book { max-width: 90%; }
+}
+</style>
+<script type="text/javascript" src="../../javascripts/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var email = getParameterByName('ref');
+</script>
+<script>
+$(function() {
+
+  $('#download').click(function(e) {
+    e.preventDefault();
+    console.log('triggered');
+    $('#confirmation').replaceWith("<div id='confirmation'>Thanks! <a href='GreatDecisionsPerfectTiming-freecopy.pdf'>Click here to download</a> your copy.</div>");
+  });
+
+});
+</script>
+<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<div id="menu">
+  <div id="logo">
+    <a class="nav_home">Great Decisions, Perfect Timing</a>
+  </div>
+  <div id="nav">
+    <ul>
+      <li><a href="http://GreatDecisionsPerfectTiming.com/#author">by paul o'brien</a></li>
+      <li><a href="http://GreatDecisionsPerfectTiming.com">more about the book</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="page">
+  <div class="medium-6 columns">
+      <h1>Congrats!</h1>
+      <h2>You're one page closer to a creative life filled with abundance and joy.</h2>
+      <br><br>
+    <img class="book" src="../../images/bookcover.jpg" alt="Great Decisions, Perfect Timing" />
+  </div>
+  <div class="medium-1 columns">&nbsp;</div>
+  <div class="medium-4 columns">
+    <br><br><br><br><br>
+    <div id="freebooklink"><p>Please wait while we fetch your <b>free</b> copy of the book. If your download doesn't automatically start in 30 seconds, <a href="./GreatDecisionsPerfectTiming-freecopy.pdf">click here</a>.</p></div>
+    <iframe style="visibility:hidden" width="1" height="1" frameborder="0" src="./GreatDecisionsPerfectTiming-freecopy.pdf"></iframe>
+  </div>
+  <div class="medium-1 columns">&nbsp;</div>
+</div>
+
+<script src="../javascripts/foundation/foundation.js"></script>  
+<script>
+  $(document).foundation();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5562864-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
