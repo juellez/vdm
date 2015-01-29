@@ -16,17 +16,33 @@ and (max-width : 900px) {
   #page { margin-top: 20px; }
   img.book { max-width: 90%; }
 }
+
+#refintrowrapper { width: 100%; display: none; position: relative; padding: 1em 2em; text-align: center; }
+#refintro { width: 80%; margin: 0 auto; background-color: #287994; color: #fff; font-family: 'Lato','Open Sans','serif'; font-size: 1.5em; font-weight: normal; padding: 1em 2em; }
 </style>
 <script type="text/javascript" src="../javascripts/jquery-1.7.1.js"></script>
 <script>
 $(function() {
 
-  $('#download').click(function(e) {
-    e.preventDefault();
-    console.log('triggered');
-    $('#confirmation').replaceWith("<div id='confirmation'>Thanks! <a href='GreatDecisionsPerfectTiming-freecopy.pdf'>Click here to download</a> your copy.</div>");
-  });
-
+  function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+  var ref = getParameterByName('ref');
+  switch( ref ){
+    case "workfrom":
+      $("h1").replaceWith('<h1>Congrats, Workfrom Member!');
+      // $("#refintro").replaceWith('<div id="refintro">Welcome, Workfrom Member!</div>');
+      // $("#refintrowrapper").show();
+      break;
+    case "mauivision":
+      $("h1").replaceWith('<h1>Congrats, Maui Vision Reader!');
+      // $("#refintro").replaceWith('<div id="refintro">Welcome, Maui Visions Reader!</div>');
+      // $("#refintrowrapper").show();
+      break;
+  }
 });
 </script>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -46,10 +62,16 @@ $(function() {
 </div>
 
 <div id="page">
+  <!-- ----------------- HIDDEN: used only for promotional references --------------------- -->
+  <div class="row" id="refintrowrapper">
+    <div id="refintro"></div>
+  </div>
+  <!-- ------------------------------------------------------------------------------------- -->
+
   <div class="medium-6 columns">
     <div class="show-for-small">
       <h1>Congrats!</h1>
-      <h2>You're one page closer to a creative life filled with abundance and joy.</h2>
+      <h2><span class="refintro">You're </span>one page closer to a creative life filled with abundance and joy.</h2>
       <br><br>
     </div>
     <img class="book" src="../images/bookcover.jpg" alt="Great Decisions, Perfect Timing" />
@@ -58,8 +80,9 @@ $(function() {
   <div class="medium-5 columns">
     <div class="hide-for-small">
       <h1>Congrats!</h1>
-      <h2>You're eligible for a free copy of Great Decisions, Perfect Timing</h2>
+      <h2><span class="refintro">You're </span>eligible for a free copy of Great Decisions, Perfect Timing</h2>
     </div>
+
     <p>Enter your email address below and we'll email you a download link.</p>
 
 <!-- Begin MailChimp Signup Form -->
@@ -99,14 +122,13 @@ $(function() {
 </script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-5562864-3', 'auto');
-  ga('send', 'pageview');
-
+  // ga('create', 'UA-5562864-3', 'auto');
+  // ga('send', 'pageview');
 </script>
 </body>
 </html>
