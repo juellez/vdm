@@ -33,12 +33,14 @@ $(function() {
   var ref = getParameterByName('ref');
   switch( ref ){
     case "workfrom":
-      $("h1").replaceWith('<h1>Congrats, Workfrom Member!');
+      $("h1").replaceWith('<h1>Congrats, Workfrom Member!</h1>');
+      $("#emailintro").replaceWith('<p>Author Paul O’Brien and the Divination Foundation have offered Workfrom a wonderful thank-you gift to give YOU (because we appreciate Workfrom as a movement and they appreciate you being a part of the Workfrom community)—an elegant electronic version of his new book which you can download for FREE. (It does require you signing up to the DF newsletter which comes out every two or three months and is easily to unsubscribe from if you don’t like it.)</p>');
+
       // $("#refintro").replaceWith('<div id="refintro">Welcome, Workfrom Member!</div>');
       // $("#refintrowrapper").show();
       break;
     case "mauivision":
-      $("h1").replaceWith('<h1>Congrats, Maui Vision Reader!');
+      $("h1").replaceWith('<h1>Congrats, Maui Vision Reader!</h1>');
       // $("#refintro").replaceWith('<div id="refintro">Welcome, Maui Visions Reader!</div>');
       // $("#refintrowrapper").show();
       break;
@@ -83,7 +85,7 @@ $(function() {
       <h2><span class="refintro">You're </span>eligible for a free copy of Great Decisions, Perfect Timing</h2>
     </div>
 
-    <p>Enter your email address below and we'll email you a download link.</p>
+    <p id="emailintro">Enter your email address below and we'll email you a download link.</p>
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
