@@ -9,7 +9,7 @@
 body { overflow: visible; }
 #page { margin-top: 80px; }
 img.book { max-width: 65%; }
-
+#downloadinfo, #downloadlinks { display: none; }
 @media only screen 
 and (max-width : 900px) {
   #menu { display: none; visibility: hidden; }
@@ -25,17 +25,14 @@ function getParameterByName(name) {
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
-var email = getParameterByName('ref');
-</script>
-<script>
 $(function() {
-
-  $('#download').click(function(e) {
-    e.preventDefault();
-    console.log('triggered');
-    $('#confirmation').replaceWith("<div id='confirmation'>Thanks! <a href='GreatDecisionsPerfectTiming-freecopy.pdf'>Click here to download</a> your copy.</div>");
-  });
-
+  var email = getParameterByName('ref');
+  if( email != null && email != '' ){
+    $("#downloadlinks").show();
+  }
+  else{
+    $("#downloadinfo").show();
+  }
 });
 </script>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -61,10 +58,13 @@ $(function() {
     <br><br>
   </div>
   <div class="medium-5 columns">
-      <h1>Your Download</h1>
+    <h1>Your Download</h1>
+    <div id="downloadinfo">
+      <p>Sorry, but we were unable to validate your request for the free copy. Please check the link you received in your confirmation email and try again. If you continue to receive this in error, contact us at <b>info@divination.com</b>.</p>
+    </div>    
+    <div id="downloadlinks">
       <p>Select the electronic format that best suits your reader.</p>
       <br><br>
-
       <div class="medium-6 columns" style="vertical-align:top">
         <a href="./GreatDecisionsPerfectTiming.mobi"><img width="185" src="./amazon-kindle.jpg" alt="Amazon Kindle" /> (mobi)</a>
       </div>
@@ -79,7 +79,7 @@ $(function() {
         <br><br>
         <br><br>
       </div>
-
+    </div>
     <br><br>
     <hr>
     <br><br>
@@ -99,7 +99,7 @@ $(function() {
 
 </div>
 
-<script src="../javascripts/foundation/foundation.js"></script>  
+<script src="../../javascripts/foundation/foundation.js"></script>  
 <script>
   $(document).foundation();
 </script>
