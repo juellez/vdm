@@ -13,6 +13,10 @@
 	text-shadow:rgba(0,0,0,0.7) 1px 1px 0px;
 }
 
+.is-forum {
+max-height: 90%;
+overflow: scroll;
+}
 
 .intro_text_home01{-webkit-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;-moz-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;-ms-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;-o-animation:intro_text_home 0.7s ease-in-out 1.4s backwards;animation:intro_text_home 0.7s ease-in-out 1.4s backwards}
 .intro_tri_home{-webkit-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;-moz-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;-ms-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;-o-animation:intro_text_home 0.7s ease-in-out 1.5s backwards;animation:intro_text_home 0.7s ease-in-out 1.5s backwards}
