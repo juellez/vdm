@@ -15,6 +15,7 @@
 
 <script src="../javascripts/respond.src.js"></script>
 <script src="../javascripts/vendor/custom.modernizr.js"></script>
+<script src="../javascripts/jquery-1.7.1.js"></script>
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
 <style>
@@ -44,8 +45,9 @@
 <!--  --------------------- PAGE INTO HERE ---------------------------------------------------------------- -->
 
 <h1>The Synchronicities Forum</h1>
-<p>Share with a community of others who are making note of amazing synchronicities that have happened in your life (whether you understand the meaning just yet or not). Browse others' stories by clicking any below to read more and discuss.</p>
-<p>Comments and discussion could be to ask clarifying questions, surmise the possible meaning of the coincidence, etc. Have fun (and please keep the discussion civil).</p>
+<p>Share with a community of others who are making note of amazing synchronicities that have happened in your life&mdash;whether you understand the meaning just yet or not. Share your story by starting it as a new topic below.</p>
+
+<p>Browse others' stories by clicking any below to read more and discuss. Comments and discussion could be to ask clarifying questions, surmise the possible meaning of the coincidence, etc. Have fun&mdash;and please keep the discussion civil.</p>
 
 <!-- ---------------------  END PAGE INTO: do not edit below this line, it's where the forums are pulled in -->
 </div></div></div>
@@ -62,9 +64,9 @@
   ga('create', 'UA-5562864-3', 'auto');
   ga('send', 'pageview');
 
-  window.onload = function() {
-    document.getElementsByClassName('Email')[0].placeholder='Share your synchronicity story...';
-  }
+  // $(document).ready( function(){
+  //   $('.m-input-title').attr("placeholder","Share your synchronicity story...");
+  // });
 
 </script>
 </body>
